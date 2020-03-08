@@ -8,12 +8,12 @@ class PostsController < ApplicationController
   end
 
   def update
-    @post.update(post_params).valid?
+    @post.update(post_params)
 
       redirect_to post_path(@post)
 
       render :edit
-    
+
   end
 
   private
