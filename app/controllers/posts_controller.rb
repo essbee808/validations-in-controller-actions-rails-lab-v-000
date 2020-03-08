@@ -11,7 +11,7 @@ class PostsController < ApplicationController
     @post.update(post_params).valid?
 
       redirect_to post_path(@post)
-  
+
       render :edit
     
   end
